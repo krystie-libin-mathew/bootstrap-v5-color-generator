@@ -1,5 +1,5 @@
 function componentToHex(c) {
-    let hex = c.toString(16);
+    let hex = c.toString(16).toUpperCase();
     return hex.length === 1 ? "0" + hex : hex;
 }
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(swatch);
         let swatchColor = window.getComputedStyle(swatch).backgroundColor;
         let swatchRGB = extractRGB(swatchColor);
-        swatch.innerHTML = `<strong class="d-block">$${color}</strong>${rgbToHex(swatchRGB.r, swatchRGB.g, swatchRGB.b)}`;
+        swatch.innerHTML = `<strong class="d-block">${color}</strong>${rgbToHex(swatchRGB.r, swatchRGB.g, swatchRGB.b)}`;
         document.body.removeChild(swatch); // Remove swatch from the body
 
         // Append the swatch to the column
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.appendChild(shadeDiv); // Temporarily add to body to compute color
             let computedColor = window.getComputedStyle(shadeDiv).backgroundColor;
             let shadeRGB = extractRGB(computedColor);
-            shadeDiv.innerHTML = `$${color}-${shade}<br>${rgbToHex(shadeRGB.r, shadeRGB.g, shadeRGB.b)}`;
+            shadeDiv.innerHTML = `${color}-${shade}<br>${rgbToHex(shadeRGB.r, shadeRGB.g, shadeRGB.b)}`;
             document.body.removeChild(shadeDiv); // Remove shadeDiv from the body
 
             column.appendChild(shadeDiv);
