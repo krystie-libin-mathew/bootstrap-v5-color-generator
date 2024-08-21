@@ -22,36 +22,38 @@ function extractRGB(rgbString) {
 const colors = ['blue', 'indigo', 'purple', 'pink', 'red', 'orange', 'yellow', 'green', 'teal', 'cyan'];
 const shades = [100, 200, 300, 400, 500, 600, 700, 800, 900];
 
-colors.forEach(color => {
-    let column = document.createElement('div');
-    column.className = 'col-md-4 mb-3 font-monospace';
+document.addEventListener('DOMContentLoaded', () => {
+    colors.forEach(color => {
+        let column = document.createElement('div');
+        column.className = 'col-md-4 mb-3 font-monospace';
 
-    let swatch = document.createElement('div');
-    swatch.className = `p-3 mb-2 swatch-${color}`;
-    column.appendChild(swatch); // Add swatch to the column
+        let swatch = document.createElement('div');
+        swatch.className = `p-3 mb-2 swatch-${color}`;
+        column.appendChild(swatch); // Add swatch to the column
 
-    // Temporarily add swatch to the body to compute its color
-    document.body.appendChild(swatch);
-    let swatchColor = window.getComputedStyle(swatch).backgroundColor;
-    let swatchRGB = extractRGB(swatchColor);
-    swatch.innerHTML = `<strong class="d-block">$${color}</strong>${rgbToHex(swatchRGB.r, swatchRGB.g, swatchRGB.b)}`;
-    document.body.removeChild(swatch); // Remove swatch from the body
+        // Temporarily add swatch to the body to compute its color
+        document.body.appendChild(swatch);
+        let swatchColor = window.getComputedStyle(swatch).backgroundColor;
+        let swatchRGB = extractRGB(swatchColor);
+        swatch.innerHTML = `<strong class="d-block">$${color}</strong>${rgbToHex(swatchRGB.r, swatchRGB.g, swatchRGB.b)}`;
+        document.body.removeChild(swatch); // Remove swatch from the body
 
-    // Append the swatch to the column
-    column.appendChild(swatch);
+        // Append the swatch to the column
+        column.appendChild(swatch);
 
-    shades.forEach(shade => {
-        let shadeDiv = document.createElement('div');
-        shadeDiv.className = `p-3 ${color}-${shade}`;
-        column.appendChild(shadeDiv); // Add shadeDiv to the column
-        document.body.appendChild(shadeDiv); // Temporarily add to body to compute color
-        let computedColor = window.getComputedStyle(shadeDiv).backgroundColor;
-        let shadeRGB = extractRGB(computedColor);
-        shadeDiv.innerHTML = `$${color}-${shade}<br>${rgbToHex(shadeRGB.r, shadeRGB.g, shadeRGB.b)}`;
-        document.body.removeChild(shadeDiv); // Remove shadeDiv from the body
+        shades.forEach(shade => {
+            let shadeDiv = document.createElement('div');
+            shadeDiv.className = `p-3 ${color}-${shade}`;
+            column.appendChild(shadeDiv); // Add shadeDiv to the column
+            document.body.appendChild(shadeDiv); // Temporarily add to body to compute color
+            let computedColor = window.getComputedStyle(shadeDiv).backgroundColor;
+            let shadeRGB = extractRGB(computedColor);
+            shadeDiv.innerHTML = `$${color}-${shade}<br>${rgbToHex(shadeRGB.r, shadeRGB.g, shadeRGB.b)}`;
+            document.body.removeChild(shadeDiv); // Remove shadeDiv from the body
 
-        column.appendChild(shadeDiv);
+            column.appendChild(shadeDiv);
+        });
+
+        document.querySelector('.row').appendChild(column);
     });
-
-    document.querySelector('.row').appendChild(column);
 });

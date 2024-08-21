@@ -15,8 +15,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #fff;
-  background-color: #fff;
+  color: black;
+  background-color: white;
 }
 
 .p-3 {
@@ -62,13 +62,11 @@ body {
 h1 {
   margin-top: 0;
   margin-bottom: 0;
-  color: black;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1.5rem;
-  color: black;
 }
 
 .color-swatches {
