@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         column.className = 'col-md-4 mb-3 font-monospace';
 
         let swatch = document.createElement('div');
-        swatch.className = `p-3 mb-2 swatch-${color}`;
+        swatch.className = `p-3 mb-2 swatch-3d swatch-${color}`;
         column.appendChild(swatch); // Add swatch to the column
 
         // Temporarily add swatch to the body to compute its color
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         shades.forEach(shade => {
             let shadeDiv = document.createElement('div');
-            shadeDiv.className = `p-3 ${color}-${shade}`;
+            shadeDiv.className = `p-3 swatch-3d ${color}-${shade}`;
             column.appendChild(shadeDiv); // Add shadeDiv to the column
             document.body.appendChild(shadeDiv); // Temporarily add to body to compute color
             let computedColor = window.getComputedStyle(shadeDiv).backgroundColor;

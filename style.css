@@ -69,6 +69,41 @@ p {
   margin-bottom: 1.5rem;
 }
 
+/* 3D Effects for Color Swatches */
+.swatch-3d {
+  display: inline-block;
+  position: relative;
+  margin: 0.1rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 99%;
+  perspective: 1000px;
+}
+
+.swatch-3d::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  z-index: -1;
+  transform: translateZ(-10px);
+}
+
+.swatch-3d:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), inset 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.swatch-3d:hover::before {
+  transform: translateZ(-15px);
+}
+
 .color-swatches {
   display: flex;
   margin: 0 -5px;
