@@ -23,9 +23,6 @@ $teal: #20c997;
 $cyan: #0dcaf0;
 
 $colors: (
-    "white": $white,
-    "black": $black,
-    "gray": $gray,
     "blue": $blue,
     "indigo": $indigo,
     "purple": $purple,
@@ -35,7 +32,10 @@ $colors: (
     "yellow": $yellow,
     "green": $green,
     "teal": $teal,
-    "cyan": $cyan
+    "cyan": $cyan,
+    "gray": $gray,
+    "white": $white,
+    "black": $black
 );
 
 // Function to generate tints and shades with clamping
@@ -68,6 +68,11 @@ $generated-colors: (
         // Store the generated color in the map
         $generated-colors: map-merge($generated-colors,
                 ("#{$name}-#{$i}00": if($i <=5, $tint, $shade)));
+    }
+
+    .swatch-#{$name} {
+        color: if($name !="white", $white, $black);
+        background-color: $color;
     }
 }
 

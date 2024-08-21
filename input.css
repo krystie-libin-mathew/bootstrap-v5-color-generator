@@ -1,246 +1,3 @@
-.white-100 {
-  background-color: white;
-}
-
-.white-100:hover {
-  background-color: #fff;
-  color: white;
-}
-
-.white-200 {
-  background-color: white;
-}
-
-.white-200:hover {
-  background-color: #fff;
-  color: white;
-}
-
-.white-300 {
-  background-color: white;
-}
-
-.white-300:hover {
-  background-color: #fff;
-  color: white;
-}
-
-.white-400 {
-  background-color: white;
-}
-
-.white-400:hover {
-  background-color: #fff;
-  color: white;
-}
-
-.white-500 {
-  background-color: white;
-}
-
-.white-500:hover {
-  background-color: #fff;
-  color: white;
-}
-
-.white-600 {
-  background-color: #cccccc;
-}
-
-.white-600:hover {
-  background-color: #fff;
-  color: #cccccc;
-}
-
-.white-700 {
-  background-color: #999999;
-}
-
-.white-700:hover {
-  background-color: #fff;
-  color: #999999;
-}
-
-.white-800 {
-  background-color: #666666;
-}
-
-.white-800:hover {
-  background-color: #fff;
-  color: #666666;
-}
-
-.white-900 {
-  background-color: #333333;
-}
-
-.white-900:hover {
-  background-color: #fff;
-  color: #333333;
-}
-
-.black-100 {
-  background-color: #cccccc;
-}
-
-.black-100:hover {
-  background-color: #fff;
-  color: #cccccc;
-}
-
-.black-200 {
-  background-color: #999999;
-}
-
-.black-200:hover {
-  background-color: #fff;
-  color: #999999;
-}
-
-.black-300 {
-  background-color: #666666;
-}
-
-.black-300:hover {
-  background-color: #fff;
-  color: #666666;
-}
-
-.black-400 {
-  background-color: #333333;
-}
-
-.black-400:hover {
-  background-color: #fff;
-  color: #333333;
-}
-
-.black-500 {
-  background-color: black;
-}
-
-.black-500:hover {
-  background-color: #fff;
-  color: black;
-}
-
-.black-600 {
-  background-color: black;
-}
-
-.black-600:hover {
-  background-color: #fff;
-  color: black;
-}
-
-.black-700 {
-  background-color: black;
-}
-
-.black-700:hover {
-  background-color: #fff;
-  color: black;
-}
-
-.black-800 {
-  background-color: black;
-}
-
-.black-800:hover {
-  background-color: #fff;
-  color: black;
-}
-
-.black-900 {
-  background-color: black;
-}
-
-.black-900:hover {
-  background-color: #fff;
-  color: black;
-}
-
-.gray-100 {
-  background-color: #eff0f2;
-}
-
-.gray-100:hover {
-  background-color: #fff;
-  color: #eff0f2;
-}
-
-.gray-200 {
-  background-color: #dee1e5;
-}
-
-.gray-200:hover {
-  background-color: #fff;
-  color: #dee1e5;
-}
-
-.gray-300 {
-  background-color: #ced3d7;
-}
-
-.gray-300:hover {
-  background-color: #fff;
-  color: #ced3d7;
-}
-
-.gray-400 {
-  background-color: #bdc4ca;
-}
-
-.gray-400:hover {
-  background-color: #fff;
-  color: #bdc4ca;
-}
-
-.gray-500 {
-  background-color: #adb5bd;
-}
-
-.gray-500:hover {
-  background-color: #fff;
-  color: #adb5bd;
-}
-
-.gray-600 {
-  background-color: #8a9197;
-}
-
-.gray-600:hover {
-  background-color: #fff;
-  color: #8a9197;
-}
-
-.gray-700 {
-  background-color: #686d71;
-}
-
-.gray-700:hover {
-  background-color: #fff;
-  color: #686d71;
-}
-
-.gray-800 {
-  background-color: #45484c;
-}
-
-.gray-800:hover {
-  background-color: #fff;
-  color: #45484c;
-}
-
-.gray-900 {
-  background-color: #232426;
-}
-
-.gray-900:hover {
-  background-color: #fff;
-  color: #232426;
-}
-
 .blue-100 {
   background-color: #cfe2ff;
 }
@@ -320,6 +77,11 @@
 .blue-900:hover {
   background-color: #fff;
   color: #031633;
+}
+
+.swatch-blue {
+  color: #fff;
+  background-color: #0d6efd;
 }
 
 .indigo-100 {
@@ -403,6 +165,11 @@
   color: #140330;
 }
 
+.swatch-indigo {
+  color: #fff;
+  background-color: #6610f2;
+}
+
 .purple-100 {
   background-color: #e2d9f3;
 }
@@ -482,6 +249,11 @@
 .purple-900:hover {
   background-color: #fff;
   color: #160d27;
+}
+
+.swatch-purple {
+  color: #fff;
+  background-color: #6f42c1;
 }
 
 .pink-100 {
@@ -565,6 +337,11 @@
   color: #2b0a1a;
 }
 
+.swatch-pink {
+  color: #fff;
+  background-color: #d63384;
+}
+
 .red-100 {
   background-color: #f8d7da;
 }
@@ -644,6 +421,11 @@
 .red-900:hover {
   background-color: #fff;
   color: #2c0b0e;
+}
+
+.swatch-red {
+  color: #fff;
+  background-color: #dc3545;
 }
 
 .orange-100 {
@@ -727,6 +509,11 @@
   color: #331904;
 }
 
+.swatch-orange {
+  color: #fff;
+  background-color: #fd7e14;
+}
+
 .yellow-100 {
   background-color: #fff3cd;
 }
@@ -806,6 +593,11 @@
 .yellow-900:hover {
   background-color: #fff;
   color: #332701;
+}
+
+.swatch-yellow {
+  color: #fff;
+  background-color: #ffc107;
 }
 
 .green-100 {
@@ -889,6 +681,11 @@
   color: #051b11;
 }
 
+.swatch-green {
+  color: #fff;
+  background-color: #198754;
+}
+
 .teal-100 {
   background-color: #d2f4ea;
 }
@@ -968,6 +765,11 @@
 .teal-900:hover {
   background-color: #fff;
   color: #06281e;
+}
+
+.swatch-teal {
+  color: #fff;
+  background-color: #20c997;
 }
 
 .cyan-100 {
@@ -1051,6 +853,269 @@
   color: #032830;
 }
 
+.swatch-cyan {
+  color: #fff;
+  background-color: #0dcaf0;
+}
+
+.gray-100 {
+  background-color: #eff0f2;
+}
+
+.gray-100:hover {
+  background-color: #fff;
+  color: #eff0f2;
+}
+
+.gray-200 {
+  background-color: #dee1e5;
+}
+
+.gray-200:hover {
+  background-color: #fff;
+  color: #dee1e5;
+}
+
+.gray-300 {
+  background-color: #ced3d7;
+}
+
+.gray-300:hover {
+  background-color: #fff;
+  color: #ced3d7;
+}
+
+.gray-400 {
+  background-color: #bdc4ca;
+}
+
+.gray-400:hover {
+  background-color: #fff;
+  color: #bdc4ca;
+}
+
+.gray-500 {
+  background-color: #adb5bd;
+}
+
+.gray-500:hover {
+  background-color: #fff;
+  color: #adb5bd;
+}
+
+.gray-600 {
+  background-color: #8a9197;
+}
+
+.gray-600:hover {
+  background-color: #fff;
+  color: #8a9197;
+}
+
+.gray-700 {
+  background-color: #686d71;
+}
+
+.gray-700:hover {
+  background-color: #fff;
+  color: #686d71;
+}
+
+.gray-800 {
+  background-color: #45484c;
+}
+
+.gray-800:hover {
+  background-color: #fff;
+  color: #45484c;
+}
+
+.gray-900 {
+  background-color: #232426;
+}
+
+.gray-900:hover {
+  background-color: #fff;
+  color: #232426;
+}
+
+.swatch-gray {
+  color: #fff;
+  background-color: #adb5bd;
+}
+
+.white-100 {
+  background-color: white;
+}
+
+.white-100:hover {
+  background-color: #fff;
+  color: white;
+}
+
+.white-200 {
+  background-color: white;
+}
+
+.white-200:hover {
+  background-color: #fff;
+  color: white;
+}
+
+.white-300 {
+  background-color: white;
+}
+
+.white-300:hover {
+  background-color: #fff;
+  color: white;
+}
+
+.white-400 {
+  background-color: white;
+}
+
+.white-400:hover {
+  background-color: #fff;
+  color: white;
+}
+
+.white-500 {
+  background-color: white;
+}
+
+.white-500:hover {
+  background-color: #fff;
+  color: white;
+}
+
+.white-600 {
+  background-color: #cccccc;
+}
+
+.white-600:hover {
+  background-color: #fff;
+  color: #cccccc;
+}
+
+.white-700 {
+  background-color: #999999;
+}
+
+.white-700:hover {
+  background-color: #fff;
+  color: #999999;
+}
+
+.white-800 {
+  background-color: #666666;
+}
+
+.white-800:hover {
+  background-color: #fff;
+  color: #666666;
+}
+
+.white-900 {
+  background-color: #333333;
+}
+
+.white-900:hover {
+  background-color: #fff;
+  color: #333333;
+}
+
+.swatch-white {
+  color: #000;
+  background-color: #fff;
+}
+
+.black-100 {
+  background-color: #cccccc;
+}
+
+.black-100:hover {
+  background-color: #fff;
+  color: #cccccc;
+}
+
+.black-200 {
+  background-color: #999999;
+}
+
+.black-200:hover {
+  background-color: #fff;
+  color: #999999;
+}
+
+.black-300 {
+  background-color: #666666;
+}
+
+.black-300:hover {
+  background-color: #fff;
+  color: #666666;
+}
+
+.black-400 {
+  background-color: #333333;
+}
+
+.black-400:hover {
+  background-color: #fff;
+  color: #333333;
+}
+
+.black-500 {
+  background-color: black;
+}
+
+.black-500:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.black-600 {
+  background-color: black;
+}
+
+.black-600:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.black-700 {
+  background-color: black;
+}
+
+.black-700:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.black-800 {
+  background-color: black;
+}
+
+.black-800:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.black-900 {
+  background-color: black;
+}
+
+.black-900:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.swatch-black {
+  color: #fff;
+  background-color: #000;
+}
+
 .primary-color {
   color: #0d6efd;
 }
@@ -1081,4 +1146,6 @@
 
 .dark-color {
   color: #232426;
-}/*# sourceMappingURL=input.css.map */
+}
+
+/*# sourceMappingURL=input.css.map */
